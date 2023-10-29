@@ -2,14 +2,14 @@ body{
     color:black !important;
 }
 
-/*     */
+/*  empty navigation bar  */
 .nav-bar{
     height:57px;
     width:100%;
     background-color: black;
 }
 
-/*        */
+/*      1st section having social handles link  */
 .container-1{
     background-color: rgb(12, 220, 12);
     display: flex;
@@ -54,7 +54,7 @@ body{
     box-shadow: 0.5px 0.5px black;
 }
 
-/*  */
+/* setting media query for h1 for different dimensions */
 @media (max-width:420px){
     .intro-h1{
         font-size: 4rem;
@@ -75,7 +75,7 @@ body{
 }
 
 
-/*   */
+/*  2nd section having bio */
 .bio-container{
     display: flex;
     flex-direction: column;
@@ -103,7 +103,7 @@ body{
     height:200px;
 
 }
-/*  */
+/* setting media query for paragraph tag of bio */
 
 @media (max-width:360px){
     .bio-p{
@@ -132,7 +132,7 @@ body{
     }
 }
 
-/*  */
+/*third section having image and github link  */
 
 .container-2{
     height:700px;
@@ -163,7 +163,20 @@ img{
     width: 100%;
     object-fit:cover;
 }
-@media (max-width:576px){
+/* setting media query for pic for diffrent dimensions */
+@media (max-width:575px) {
+    .pic{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    img{
+        height:40%;
+        width: 80%;
+        object-fit:cover;
+    }
+}
+@media (min-width:576px){
     .pic{
         display: flex;
         align-items: center;
@@ -175,7 +188,7 @@ img{
         object-fit:cover;
     }
 }
-/*  */
+/* setting media query for myhustle tag for diffrent dimensions */
 
 @media(max-width:867px){
     .myhustle{
@@ -224,7 +237,7 @@ img{
 }
 
 
-/*    */
+/*   footer section of the web page */
 .footer{
     background-color: black;
     width: 100%;
